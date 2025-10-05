@@ -1,0 +1,20 @@
+# create function that determines if number is perfect number 
+    # perfect number: sum of proper divisors = number itself. (ex. 6 --> 1+2+3=6)
+# find all under a million  
+
+def is_perfect(num):
+    divider = 1
+    total = 0
+    while divider < num: 
+        if num % divider == 0:
+            total += divider # total = total + divider 
+        divider += 1 
+    return total == num
+
+# end of is_perfect()
+number = 1
+while number <= 1000000:
+    if is_perfect(number):
+        #if is_perfect(number) == True: 
+        print(f"{number} is perfect. ")
+    number += 1

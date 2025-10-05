@@ -1,2 +1,9 @@
 # squares
 
+input("how many squares do you have? ")
+num = 0
+if num >=1
+result = int(num ** 0.5)
+input("you can have a square with a side length of {result}")
+else
+you have no squares 
