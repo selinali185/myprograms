@@ -1,0 +1,17 @@
+# painting fences
+
+from math import ceil
+
+section1 = input("enter section 1: ")
+section2 = input("enter section 2: ")
+section3 = input("enter section 3: ")
+
+cans = len(section1) + len(section2) + len(section3)
+
+boxes = ceil(cans/12) 
+
+leftover = 12*boxes - cans
+
+total_cost = 14.95 * boxes
+
+print(f"you need {cans} cans, have {leftover} cans leftover, and it would cost ${total_cost}")
