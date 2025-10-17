@@ -1,0 +1,16 @@
+# list skills checklist 
+
+# create an empty list 
+a_list = []
+
+# determine if a string is empty 
+
+
+# what does len(), sum(), min(), max() do when a list is an argument? 
+
+# access the individual characters/items in a list 
+
+# access the first, access the last item in a list 
+
+# join two/multiple lists togetehr 
+
