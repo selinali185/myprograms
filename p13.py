@@ -5,7 +5,7 @@ def select(a_list):
         return a_list
     else: 
         i = 0
-        while - < len(a_list):
+        while j < len(a_list):
             smallest = a_list[i] # then prove if it is or not 
 
         # start of hunt
@@ -27,4 +27,4 @@ def select(a_list):
         # python way: 
         # a_list[i], a_list[new_location] = a_list[new_location], a_list[i]
 
-            i += 1 # access each value in a_list within current_value
+        i += 1 # access each value in a_list within current_value
