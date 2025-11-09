@@ -1,0 +1,12 @@
+# cookies
+
+
+start_money = float(input())
+cookies_sold = input()
+
+big_cookies = 0
+cookies = 0 
+
+for current_cookie in cookies_sold:
+    print(current_cookie)
+
