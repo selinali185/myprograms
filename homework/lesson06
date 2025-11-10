@@ -1,0 +1,17 @@
+# boolean
+
+name = input("enter you name: ")
+if not name:
+    print("name was not given")
+else: 
+    print(f"hello, {name}!")
+
+# member operation: if x is found in a
+
+if "a" in "Selina":
+    print("a is found in Selina")
+if "Apple" not in ["kiwi", "blueberry", "watermelon"]:
+    print("not viable fruit")
+
+if "water" in "watermelon":
+    print("water found in watermelon")
