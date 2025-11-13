@@ -1,0 +1,42 @@
+# rock paper scissors vs AI
+
+from random import choice #choice is a function that randomly chooses from a list
+
+while True:
+    print("Welcome to our rock papers scissors game..")
+    print("Please choose either rock, paper, or scissors.")
+    while True:
+        user_input = input("User's choice: ")
+        user_input = user_input.lower()  #makes everything lowercased
+
+        if user_input in {"rock", "paper", "scissors"}:
+            #user_input was valid, we cant exit the infinite loop 
+            break 
+        else: 
+            print("please type in either rock, paper, or scissor !!")
+    # end of while 
+    ai_result = choice(["rock", "paper", "scissors"])
+
+    if user_input in {"rock"} and ai_result == "paper":
+        print("you lost haha!!")
+    elif user_input in {"rock"} and ai_result == "rock":
+        print("we tied, try again!")
+    elif user_input in {"rock"} and ai_result == "scissors": 
+        print("u won!!")
+    elif user_input in {"paper"} and ai_result == "scissors":
+        print("you lost haha!!")
+    elif user_input in {"paper"} and ai_result == "paper":
+        print("we tied, try again!")
+    elif user_input in {"paper"} and ai_result == "rock": 
+        print("u won!!")
+    elif user_input in {"scissors"} and ai_result == "rock":
+        print("you lost haha!!")
+    elif user_input in {"scissors"} and ai_result == "scissors":
+        print("we tied, try again!")
+    elif user_input in {"scissors"} and ai_result == "paper": 
+        print("u won!!")
+
+    user_input = input("would you still like to play? say yes/no: ")
+    if user_input.lower() == "yes":
+        print("goodbye !") 
+        break
