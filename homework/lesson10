@@ -1,0 +1,14 @@
+# telemarketer
+
+phone_num = input("Enter your last 4 digits of the phone number: ")
+if phone[0] in {'8', '9'}:
+    if phone[1] == phone_num[2]: 
+        if phone_num[4] in {'8','9'}:
+            print(f"your last 4 digits of your phone number, {phone_num}, is a telemarketer...")
+        else: print(f"your last 4 digits of your phone number, {phone_num}, is NOT a telemarketer!!!!!")
+    else: print(f"your last 4 digits of your phone number, {phone_num}, is NOT a telemarketer!!!!!")
+else: 
+    print(f"your last 4 digits of your phone number, {phone_num}, is NOT a telemarketer!!!!!")
+
+    
+
