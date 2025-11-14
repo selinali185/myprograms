@@ -1,0 +1,40 @@
+# Quadrant Selection
+
+''' 
+original input:
+
+x = int(input())
+y = int(input())
+
+'''
+
+# modified input
+point = input() # in format of "x y"
+
+point = point.split(' ') # running function from string object class, and argument is whitespace
+# "10 " "-11" --> ["10", "-11"]
+
+point = map(int, point) # makes string to int in point, for each num, hence map
+
+print(point)
+
+# variable unpacking
+x,y = point
+print(f"x is {x}. ")
+print(f"y is {y}. ")
+
+# quadrant selection
+
+if x > 0: 
+   # pass # placeholder code in python
+   if y > 0: 
+        print("youre in quadrant 1")
+    else: 
+        print("youre in quadrant 4")
+else:
+    if y > 0:
+        print("youre in quadrant 2")
+    else: 
+        print("youre in quadrant 3")
+
+
