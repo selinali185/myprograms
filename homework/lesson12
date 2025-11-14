@@ -1,0 +1,18 @@
+# triangle times
+
+angle1 = int(input("enter your first angle: "))
+angle2 = int(input("enter your second angle: "))
+angle3 = int(input("enter your third angle: "))
+
+angle_sum = sum([angle1, angle2, angle3])
+
+if angle_sum != 180:
+    print("dis not a triangle bruh")
+else: 
+    if angle1 == angle2 == angle3:
+        print("dis an equilateral triangle boi")
+    elif angle 1 == angle2 or angle1 == 3 or angle2 == angle3:
+        print("an iscoceles??? duh")
+    elif angle1 != angle2 and angle2 != 3 and angle1 != angle3:
+        print("u got a scalene triangle... so niche")
+
