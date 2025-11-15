@@ -1,0 +1,17 @@
+# special day
+
+month = int(input("enter your month: "))
+day = int(input("enter the day of the month: "))
+
+if month ==2 and day == 18: 
+    print("Special")
+else:
+    if month < 2: 
+        print("Before")
+    elif month > 2: 
+        print("After")
+    else: 
+        if day > 18:
+            print("After")
+        else:
+            print("Before")
