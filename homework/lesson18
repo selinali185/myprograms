@@ -1,0 +1,22 @@
+# factors of a number
+
+# while loop solution
+
+number = int(input("enter your number: "))
+
+divider = 1
+while divider <= num:
+    print(f"divider is: {divider}")
+    divider += 1
+
+
+# for loop solution
+
+num = int(input("enter integer greater than 0: "))
+
+for divider in range(1,num+1):
+    print(f"divider is: {divider}")
+    if number % divider == 0:
+        # we have a factor
+        print(f"{divider} is a factor of {number}")
+        
