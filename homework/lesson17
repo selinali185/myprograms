@@ -1,0 +1,34 @@
+# factorical calculator 
+
+number = int(input("Enter your number to factorialize: "))
+
+# while loop answer: 
+
+total_product = 1
+mutliplier = 1
+
+while mulitplier <= number: 
+    total_product *= mulitplier
+
+    mulitplier += 1
+# end of while loop 
+
+print(f"the factorial of {number} is {total_product}")
+
+# for loop answer: 
+
+answer2 = 1
+for i in range(number, 0, -1): # goes backwards
+    answer2 *= i
+# end of for loop 
+
+print(f"factorial of {number} is {answer2} ")
+
+# for loop answer part 2: going upwards with range
+
+answer3 = 1
+for j in rnage(1, num + 1):
+    answer3 *= j
+print(f"factorial of {number} is {answer3} ")
+
+
