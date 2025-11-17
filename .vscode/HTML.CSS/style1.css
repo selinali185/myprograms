@@ -1,0 +1,40 @@
+body {
+    background-color: #475578;
+    background: radial-gradient(circle,rgb(66, 99, 83)0%, rgb(0, 73, 29)100%);
+}
+
+h1 {
+    color: #e0fff0;
+}
+
+h2 {
+    color: #e0fff0;
+}
+
+h3 {
+    color: #e0fff0;
+}
+
+h4 {
+    color: #e0fff0;
+}
+
+h5 {
+    color: #e0fff0;
+}
+
+h6 {
+    color: #e0fff0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Console";
+}
+
+p {
+    color: #e0fff0;
+}
