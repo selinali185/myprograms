@@ -1,0 +1,16 @@
+# prime number checker
+
+num = int(input("enter your numer: "))
+
+counter = 0
+
+for divider in range(1, num + 1):
+    if num % divider == 0:
+        # then divider is a factor
+        counter += 1
+# end of for loop
+
+if counter == 2:
+    print(f"{num} is a prime number !!! ")
+else:
+    print(f"{num} is a composite number...")
