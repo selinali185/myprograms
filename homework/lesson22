@@ -1,0 +1,14 @@
+# finding the nth fibonacci number
+
+N = int(input("Enter the Nth fibonacci number: "))
+
+fib_0 = 0
+fib_1 = 1
+n = 0
+
+for num in range(2, N):
+    n = fib_1 + fib_0
+    fib_0 + fib_1 
+    fib_1 = fib_0
+
+print(f"fibonacci {N} is {n}")
