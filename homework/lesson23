@@ -1,0 +1,18 @@
+# average calculator 
+
+loop = True
+total_sum = 0
+counter = 0
+
+while loop: 
+    user_input = input("enter the mark OR \"Exit"\ to stop inputting marks")
+    if user_input.lower()capitalize() == "Exit":
+        loop = False
+        break
+    else:
+        mark = int(user_input)
+        if 0 <= user_input <= 100:
+            total_sum += mark
+            counter += 1
+        else: 
+            print("Invalid input")
