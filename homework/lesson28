@@ -1,0 +1,17 @@
+def palindrome_checker(text):
+    if not text:
+        return True
+    elif len(text) < 4:
+        return text[0] == text[-1]
+    else:
+        midpoint = len(text) // 2
+        for i in range(0, midpoint):
+            left = text[i]
+            right = text[-1*i -1]
+            if left != right:
+                return False
+        return True
+
+#example
+print(palindrome_checker(tacocat)) # true
+print(palindrome_checker(tacodog)) # false
