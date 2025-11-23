@@ -1,0 +1,24 @@
+# consonant counter
+
+def consonant_counter(text, vowel=False):
+    counter = 0
+    for character in text:
+        character = character.islower()
+        if character.isplha() and character not in {'a', 'e', 'i', 'o', 'u'}:
+            counter += 1
+    if not vowel:
+        return counter 
+    else:
+        counter = 0
+        for character in text:
+            character = character.islower()
+            if character.isplha() and character in {'a', 'e', 'i', 'o', 'u'}:
+                counter += 1
+        return counter
+    
+
+print(f"the counter is {consonant_counter("hello, world! ")}")
+print(f"the counter is {consonant_counter("hello, world!", True )}")
+
+
+        
