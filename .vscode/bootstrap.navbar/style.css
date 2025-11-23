@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: pink;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+ul li{
+    float: right;
+}
+
+ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    background-color: rgb(255, 164, 206);
+}
+
+body {
+    background-color: #ffe0f4;
+    background-size: cover;
+    background-position: center;
+}
+

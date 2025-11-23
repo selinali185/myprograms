@@ -1,0 +1,23 @@
+# largest prime factor
+
+num = int(input("enter a value of N: "))
+num_copy = num
+largest = 0
+
+while num % 2 == 0: # checking to see if divisible by 2, then continuously shrinking it by dividing
+    num = num // 2
+    largest = max(largest,2)
+
+if num != 1:
+    factor = 3
+    while num != 1:
+        if num % factor == 0:
+            largest = max(largest, factor)
+            num //= factor 
+        else:
+            factor += 2 # checking next odd number
+
+print(f"{largest} is the largest prime factor for {num_copy}")
+
+
+
