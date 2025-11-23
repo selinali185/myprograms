@@ -1,0 +1,12 @@
+def sorted_list(word1, word2):
+    if not word1 or not word2:
+        return []
+    else:
+        set_word2 = set(word2) # creates set with no duplicates of each individual characters in string of word2
+        result = []
+
+        for character in word1:
+            if character in set_word2:
+                result.append(character)
+    return sorted(result)
+
