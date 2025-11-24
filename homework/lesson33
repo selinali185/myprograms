@@ -1,0 +1,32 @@
+# mean and median
+
+def mean(a_list):
+    return sum(a_list) / len (a_list)
+
+def median(a_list):
+    # 1. sorting: insertion
+    i = 1
+    while i < len(a_list):
+        j = i 
+        while j > 0:
+            if a_list[j-1] > a_list[j]:
+                a_list[j-1], a_list[j] = a_list[j], a_list[j-1]
+            else: 
+                break # gets out of while loop 
+
+            j -= 1 # j = j - 1
+
+        i += 1
+    sorted_list = a_list
+    # median
+    if len(sorted_list) % 2 == 0:
+        first_num = len(sorted_list) // 2
+        second_num = first_num + 1
+        return (sorted_list[first_num] + sorted_list[second_num])//2
+    else:
+        med = len(sorted_list) // 2
+        return sorted_list[med]
+        
+
+
+
