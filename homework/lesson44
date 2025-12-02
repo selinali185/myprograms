@@ -1,0 +1,17 @@
+# frequency of a letter/character in a word: string to dict
+
+def c_frequency(word):
+    clean_word = sorted(word.lower())
+    answer = {}
+    for character in clean_word:
+        if character not in answer:
+            answer[character] = 1
+        else:
+            answer[character] += 1
+    return answer 
+
+result = c_frequency("hello")
+print(f"character frequency of hello:\n{result}")
+
+
+    

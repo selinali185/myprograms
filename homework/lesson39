@@ -1,0 +1,16 @@
+# greatest common divisor 
+
+def gcf(num1, num2):
+    for divider in range(min(num1, num2), 0, -1): #greatest to least --> first finds biggest
+        if num1 % dividor == 0 and num2 % dividor == 0: # common factor
+            return divider 
+            
+    return 1
+
+# recursion method: euclidean algorithm 
+
+def gcf(num1, num2):
+    if num2 == 0:
+        return num1
+    else:
+        return gcf(num2, num1 % num2)

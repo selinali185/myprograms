@@ -1,0 +1,10 @@
+# largest palindromic number made from product of two 3-digit numbers
+def is_palindrome(text):
+    return text == text[::-1]
+palindromic_numbers = []
+for num1 in range(999,99,-1):
+    for num2 in range(999,99,-1):
+        current_product = num1 * num2
+        if is_palindrome(str(current_product)): # if have palindrome number
+            palindromic_numbers.append(current_product)
+print(f"largest palindromic number in our list is {mac(palindromic_numbers)}")

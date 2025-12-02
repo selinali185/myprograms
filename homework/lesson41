@@ -1,0 +1,43 @@
+# best scrabble score 
+
+def scrabble(word):
+    total_score = 0
+    for character in word:
+        if character.upper() in "EAIONRTLSU":
+            total_score += 1
+        elif character.upper() in "DG":
+            total_score += 2
+        elif character.upper() in "BCMP":
+            total_score += 3
+        elif character.upper() in "FHVWY":
+            total_score += 4
+        elif character.upper() in "K":
+            total_score += 5
+        elif character.upper() in "JX":
+            total_score += 8
+        elif character.upper() in "QZ":
+            total_score += 10
+    return total_score
+
+
+def best_score(a_list):
+    result_list = ["", 0]
+    for word in a_list:
+        current_score = scrabble(word)
+        if current_score > result_list[1]:
+            result_list = word
+            result_list[1] = current_score
+    return result_list
+
+
+words: [
+    "graphic",
+    "despair",
+    "choose",
+    "notice",
+    "history",
+    "appetite"
+    ]
+
+answer, score = best_score(words)
+print(f"{answer} has the highest score of {score}")
